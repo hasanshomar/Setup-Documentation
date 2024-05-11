@@ -81,5 +81,7 @@ The command `ros2 launch realsense2_camera rs_launch.py` initiates the ROS 2 lau
 
 - **Configures Additional Features**: Depending on the parameters and arguments provided, the launch file can also set up additional functionalities such as point cloud generation, data alignment, and filtering options that enhance the usability of the camera data within ROS 2 applications.
 
+## This is basically the foundation of collecting data from the camera
+
 
 <hr>
