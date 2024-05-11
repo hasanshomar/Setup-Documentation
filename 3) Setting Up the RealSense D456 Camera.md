@@ -80,8 +80,7 @@ The command `ros2 launch realsense2_camera rs_launch.py` initiates the ROS 2 lau
 - **Sets Up ROS Topics**: It establishes a set of ROS topics through which the data from the camera is made available. For example, depth data might be published on a topic like `/camera/depth/image_rect_raw`, allowing other ROS nodes to subscribe to and process this data.
 
 - **Configures Additional Features**: Depending on the parameters and arguments provided, the launch file can also set up additional functionalities such as point cloud generation, data alignment, and filtering options that enhance the usability of the camera data within ROS 2 applications.
-
-## This is basically the foundation of collecting data from the camera
+    ### This is basically the foundation of collecting data from the camera
 
 
 <hr>
