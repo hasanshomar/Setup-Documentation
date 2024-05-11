@@ -17,4 +17,6 @@ This table provides a comprehensive overview of the hardware and software requir
 |                      | Firmware Version                     | (Version if applicable) |
 
 1. [ROS 2 Installation](https://github.com/hasanshomar/Setup-Documentation/blob/main/1.%20ROS%202%20Installation.md)
+2. [RealSense Environment Setup](https://github.com/hasanshomar/Setup-Documentation/blob/main/2%20RealSense%20Environment%20Setup.md)
+3. 
 
