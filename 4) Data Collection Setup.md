@@ -1,1 +1,51 @@
+# Data Collection Setup
 
+This section details the process of setting up data collection from the RealSense D456 camera using ROS 2. 
+
+### Prepare the Environment
+
+  - **Navigate to the ROS 2 workspace**:
+    Ensure you are in the root of your ROS 2 workspace where the build was performed.
+    ```bash
+    cd ~/ros2_ws
+    ```
+  - **Source the ROS 2 setup script**:
+    Before running any ROS commands, ensure your environment is configured to include ROS paths.
+    ```bash
+    source /opt/ros/foxy/setup.bash
+    ```
+    This command sources the global ROS 2 setup script, setting up the environment variables needed for ROS 2. It configures the shell to include ROS libraries, executables, and other resources.
+
+  - **Source the local project workspace**:
+    It's crucial to source your local project to overlay it on top of the existing ROS 2 environment.
+    ```bash
+    . install/local_setup.bash
+    ```
+    This command sources your local ROS 2 workspace setup, allowing you to use packages and software you've built in this workspace. It ensures that any local changes or developments are recognized in the current terminal session.
+
+### Launch the Camera Node
+
+  - **Start the RealSense Camera Node**:
+    To begin data collection, start the camera node using the ROS 2 launch command.
+    ```bash
+    ros2 launch realsense2_camera rs_launch.py
+    ```
+    This command initiates the launch file for the RealSense camera. `rs_launch.py` configures and starts the RealSense camera node, setting parameters such as resolution and features like depth and color streaming. It ensures that the camera begins publishing data on predefined ROS topics.
+
+### Verify Data Streaming
+
+  - **Check ROS Topics**:
+    Confirm that the camera is publishing data by listing the active ROS topics.
+    ```bash
+    ros2 topic list
+    ```
+    This command lists all active ROS topics to verify that the camera node is publishing data. Look for topics related to depth, color, and infrared streams which indicate active data publishing.
+
+    In the list there should be a topic labeled `/camera/depth/image_rect_raw`. If not, see steps explained [here]()
+
+  - **Echo a Topic**:
+    To see the real-time data being published, choose a topic and echo its messages.
+    ```bash
+    ros2 topic echo /camera/depth/image_rect_raw
+    ```
+    This command displays the live data being published on the `/camera/depth/image_rect_raw` topic. It's used to visually confirm that depth data is being captured and streamed correctly, which is crucial for data collection validation.
