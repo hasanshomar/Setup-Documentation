@@ -7,12 +7,16 @@
   - Create a ROS2 workspace
       ```bash
       mkdir -p ~/ros2_ws/src
+      ```
+      ```
       cd ~/ros2_ws/src/
       ```
   
-  - Clone the latest ROS2 Intel&reg; RealSense&trade;  wrapper from [here](https://github.com/IntelRealSense/realsense-ros.git) into '~/ros2_ws/src/'
+  - Clone the latest ROS2 Intel RealSense  wrapper from [here](https://github.com/IntelRealSense/realsense-ros.git) into '~/ros2_ws/src/'
       ```bashrc
       git clone https://github.com/IntelRealSense/realsense-ros.git -b ros2-development
+      ```
+      ```
       cd ~/ros2_ws
       ```
   
