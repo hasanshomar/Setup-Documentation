@@ -17,6 +17,8 @@ This table provides a comprehensive overview of the hardware and software requir
 |                      | Firmware Version                     | (Version if applicable) |
 
 1. [ROS 2 Installation](https://github.com/hasanshomar/Setup-Documentation/blob/main/1.%20ROS%202%20Installation.md)
-2. [RealSense Environment Setup](https://github.com/hasanshomar/Setup-Documentation/blob/main/2%20RealSense%20Environment%20Setup.md)
-3. 
+2. [RealSense Environment Setup](https://github.com/hasanshomar/Setup-Documentation/blob/main/2.%20RealSense%20Environment%20Setup.md)
+3. [Setting Up the Realsense D456 Camera](https://github.com/hasanshomar/Setup-Documentation/blob/main/3.%20Setting%20Up%20the%20RealSense%20D456%20Camera.md)
+4. [Data Collection Setup](https://github.com/hasanshomar/Setup-Documentation/blob/main/4.%20Data%20Collection%20Setup.md)
+5. [Exporting Data in Various Formats](https://github.com/hasanshomar/Setup-Documentation/blob/main/5.%20Exporting%20Data%20in%20Various%20Formats.md)
 
