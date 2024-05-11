@@ -64,7 +64,7 @@ cd ~/ros2_ws
   
   #### with ros2 run:
     ros2 run realsense2_camera realsense2_camera_node
-    # or, with parameters, for example - temporal and spatial filters are enabled:
+    #or
     ros2 run realsense2_camera realsense2_camera_node --ros-args -p enable_color:=false -p spatial_filter.enable:=true -p temporal_filter.enable:=true
   
   #### with ros2 launch:
