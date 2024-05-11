@@ -1,12 +1,8 @@
 # Install Intel RealSense ROS2 wrapper
 
   
-#### Option 1: Install debian package from ROS servers (Foxy EOL distro is not supported by this option):
-  - [Configure](http://wiki.ros.org/Installation/Ubuntu/Sources) your Ubuntu repositories
-  - Install all realsense ROS packages by ```sudo apt install ros-<ROS_DISTRO>-realsense2-*```
-  - For example, for Humble distro: ```sudo apt install ros-humble-realsense2-*```
-  
-#### Option 2: Install from source
+
+#### Install from source
   
   - Create a ROS2 workspace
       ```bash
